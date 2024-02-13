@@ -1,0 +1,32 @@
+// Баазова Нина Эдгаровна, НБИбд-02-23
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+double e, f, g, h;
+
+cout << "Введите значение e: ";
+cin >> e;
+
+cout << "Введите значение f: ";
+cin >> f;
+
+cout << "Введите значение g: ";
+cin >> g;
+
+cout << "Введите значение h: ";
+cin >> h;
+
+double a = sqrt(pow(abs(e - (2 / f)), 2) + g);
+double b = sin(e) + pow(cos(h), 2);
+double c = (22 * g) / ((e * f) - 2);
+
+cout << "Значение a: " << a << endl;
+cout << "Значение b: " << b << endl;
+cout << "Значение c: " << c << endl;
+
+return 0;
+}
