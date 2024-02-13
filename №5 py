@@ -1,0 +1,19 @@
+# Баазова Нина Эдгаровна, НБИбд-02-23
+
+import random
+
+arr1 = [random.randint(-30, 30) for _ in range(20)]
+arr2 = [random.randint(-30, 30) for _ in range(20)]
+
+print('Первый массив:', *arr1)
+print('Второй массив:', *arr2)
+
+new_arr = []
+
+for i in range(len(arr1)):
+    if arr1[i] > arr2[i]:
+        new_arr.append(arr1[i])
+    else:
+        new_arr.append(arr2[i])
+
+print('Новый массив: ', *new_arr)
