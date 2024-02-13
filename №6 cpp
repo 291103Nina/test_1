@@ -1,0 +1,39 @@
+// Баазова Нина Эдгаровна, НБИбд-02-23
+
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int countDigits(int num) {
+    int count=0;
+    while (num!=0) {
+        num /=10;
+        count ++;
+    }
+    return count;
+}
+ 
+int main() {  
+    
+    int num1, num2; 
+    
+    cout << "Введите первое натуральное число: ";
+    cin >> num1;
+    
+    cout << "Введите второе натуральное число: ";
+    cin >> num2;
+    
+    int digits1 = countDigits(num1);
+    int digits2 = countDigits(num2);
+    
+    if (digits1 > digits2) {
+        cout << "В первом числе больше цифр" << endl;
+    } else if (digits2 > digits1) {
+        cout << "Во втором числе больше цифр" << endl;
+    } else {
+        cout << "В обоих числах одинаковое количество цифр" << endl;
+        
+    }
+    return 0;
+}
